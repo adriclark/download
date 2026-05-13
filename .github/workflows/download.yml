@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download File
-        run: wget -O my-driver.exe "https://www.driverscape.com/files/misc/amd-catalyst-15.7.1-win10-64bit.zip"
+        run: wget -O my-driver.exe "https://cdn.driverscape.com/misc/amd-catalyst-15.7.1-win10-64bit.zip?access_key=1778707270-zeC0zilyDNC25%2BECgMTzZkP1%2BVD%2FP3G4qPhSOmjqGsc%3D"
       - name: Upload as Artifact
         uses: actions/upload-artifact@v4
         with:
