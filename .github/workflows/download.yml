@@ -8,19 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download File
-        run: wget -O my-file.zip "https://cdn.driverscape.com/misc/amd-catalyst-15.7.1-win10-64bit.zip?access_key=1778757639-kle%2ByiBdp3NGbn%2FEfRo%2BxQ14U2RvwO%2BvqfgLGv5ZlGU%3D"
-      
-      - name: Check if file exists
-        run: |
-          ls -la
-          echo "---"
-          file my-file.zip
+        run: wget -O my-file.zip "https://cdn.drivercase.com/misc/amd-catalyst-15.7.1-win10-64bit.zip?access_key=1778757639-kle%2ByiBdp3NGbn%2FFeRro%2BxQ14U2Rw0%2BvqFgLGV521GU%3D"
       
       - name: Split file into 90MB parts
-        run: split -b 90m my-file.zip part_
-      
-      - name: List parts
-        run: ls -la part_*
+        run: |
+          split -b 90m my-file.zip part_
+          echo "Split completed. Parts created:"
+          ls -la part_*
       
       - name: Upload parts as artifacts
         uses: actions/upload-artifact@v4
