@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download File
-        run: wget -O my-file.zip "https://cdn.driverscape.com/misc/amd-catalyst-15.7.1-win10-64bit.zip?access_key=1778743979-tXUTXvrul%2BWsICBF%2FPN%2B5v4v1Tm8yexPHpIAg2AmVl0%3D"
+        run: wget -O my-file.zip "https://cdn.driverscape.com/misc/amd-catalyst-15.7.1-win10-64bit.zip?access_key=1778757639-kle%2ByiBdp3NGbn%2FEfRo%2BxQ14U2RvwO%2BvqfgLGv5ZlGU%3D"
       
       - name: Split file into 90MB parts
         run: split -b 90m my-file.zip part_
