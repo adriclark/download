@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download File
-        run: wget -O my-file.zip "https://cdn.drivercase.com/misc/amd-catalyst-15.7.1-win10-64bit.zip?access_key=1778757639-kle%2ByiBdp3NGbn%2FFeRro%2BxQ14U2Rw0%2BvqFgLGV521GU%3D"
+        run: wget -O my-file.zip "https://drivers.plus/get/6/1/5/5/8/13-1-legacy_vista_win7_win8_64_dd_ccc.exe"
       
       - name: Split file into 90MB parts
         run: |
