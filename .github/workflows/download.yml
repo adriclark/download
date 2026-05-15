@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download File
-        run: wget -O my-file.zip "https://drivers.plus/get/6/1/5/5/8/13-1-legacy_vista_win7_win8_64_dd_ccc.exe"
+        run: wget -O my-file.zip "https://download-eu.drivers.plus/download/GUIxL1KwDctkb-BynTsSxQ/1778864979/6/1/5/5/8/13-1-legacy_vista_win7_win8_64_dd_ccc.exe"
       
       - name: Split file into 90MB parts
         run: |
